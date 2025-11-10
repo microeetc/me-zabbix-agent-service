@@ -5,6 +5,7 @@ Identity_Key=$(openssl rand -hex 6)
 PSK_KEY=$(openssl rand -hex 24)
 
 #Solicita o IP do Proxy
+echo
 echo -n "IP do Servidor Proxy: "
 read Server_Host
 echo
