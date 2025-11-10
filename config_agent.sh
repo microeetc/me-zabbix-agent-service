@@ -7,10 +7,12 @@ PSK_KEY=$(openssl rand -hex 24)
 #Solicita o IP do Proxy
 echo -n "IP do Servidor Proxy: "
 read Server_Host
+echo
 
 #Solicita o Host do Dipositivo
 echo -n "Host do Dispositivo(Padrão SPKR: EMPR-LOCL-TP-HOSTNAME): "
 read Hostname
+echo
 
 echo "ListenIP=0.0.0.0
 ListenPort=10150
