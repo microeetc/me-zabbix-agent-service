@@ -32,8 +32,10 @@ echo "ServerActive=$Server_Host:10151" >> "$zabConf"
 echo "TLSPSKIdentity=$Identity_Key" >> "$zabConf"
 
 echo "$PSK_KEY" > /etc/zabbix/zabbix_agent2.d/tls.psk
-
+echo
+echo
 echo "Configurações salvas em '$zabConf':"
+echo
 
 echo "===================================================================="
 cat "$zabConf"
