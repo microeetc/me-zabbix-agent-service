@@ -30,7 +30,7 @@ LogFileSize=0
 DebugLevel=3" > "$zabConf"
 
 echo "Hostname=$Hostname" >> "$zabConf"
-echo "Serve=$Server_Host" >> "$zabConf"
+echo "Server=$Server_Host" >> "$zabConf"
 echo "ServerActive=$Server_Host:10151" >> "$zabConf"
 echo "TLSPSKIdentity=$Identity_Key" >> "$zabConf"
 
