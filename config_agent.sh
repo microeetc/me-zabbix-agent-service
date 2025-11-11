@@ -36,7 +36,7 @@ echo "TLSPSKIdentity=$Identity_Key" >> "$zabConf"
 echo "#PSK_Key=$PSK_KEY" >> "$zabConf"
 
 
-echo "$PSK_KEY" > /etc/zabbix/zabbix_agent2.d/tls.psk
+echo "$PSK_KEY" > /etc/zabbix/zabbix_agent2.d/psk.key
 echo
 echo
 echo "Configurações salvas em '$zabConf':"
