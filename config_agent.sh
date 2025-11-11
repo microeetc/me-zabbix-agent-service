@@ -33,6 +33,8 @@ echo "Hostname=$Hostname" >> "$zabConf"
 echo "Server=$Server_Host" >> "$zabConf"
 echo "ServerActive=$Server_Host:10151" >> "$zabConf"
 echo "TLSPSKIdentity=$Identity_Key" >> "$zabConf"
+echo "#PSK_Key=$PSK_KEY" >> "$zabConf"
+
 
 echo "$PSK_KEY" > /etc/zabbix/zabbix_agent2.d/tls.psk
 echo
@@ -42,5 +44,4 @@ echo
 
 echo "===================================================================="
 cat "$zabConf"
-echo "PSK_Key=$PSK_KEY"
 echo "===================================================================="
